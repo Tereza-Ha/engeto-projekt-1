@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --main-backgound: #33292a;
+  --text-color: #fff;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 16px;
+}
+.nav {
+  background-color: var(--main-backgound);
+  color: var(--text-color);
+  margin: 0;
+  width: 100%;
+}
+
+.nav-menu {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  line-height: 50px;
+}
+
+a:hover {
+  color: #e9877b;
+}
+
+.menu-icon {
+  display: none;
+  display: none;
+  height: 35px;
+  width: 30px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.menu-img {
+  height: 35px;
+  width: 30px;
+}
+
+@media (max-width: 756px) {
+  .nav {
+    height: 45px;
+  }
+  .nav-link,
+  .nav-menu {
+    display: none;
+  }
+  .menu-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-section {
+  background-image: url("./images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+  height: calc(100vh - 50px);
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  color: var(--text-color);
+  bottom: 100px;
+  right: 300px;
+  font-size: 100px;
+  text-align: end;
+  direction: ltr;
+  -webkit-text-stroke: black 0.5px;
+}
+
+@media (max-width: 756px) {
+  h1 {
+    font-size: 50px;
+    bottom: 100px;
+    right: 100px;
+  }
+}
+
+/* about us */
+
+.about-us-container {
+  padding: 50px 0px 50px 0px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+}
+
+.about-us-img {
+  background-image: url("./images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg");
+  background-position: center 80%;
+  background-size: cover;
+  flex-basis: 500px;
+  height: auto;
+  width: 500px;
+}
+
+.about-us-text {
+  text-align: left;
+  width: 385px;
+  padding-top: 20px;
+}
+
+@media (max-width: 756px) {
+  .about-us-container {
+    flex-direction: column;
+  }
+  .about-us-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-height: 250px;
+  }
+
+  .about-us-text,
+  .about-us-heading,
+  .about-us-img {
+    width: auto;
+    margin: 0px 40px 0px 40px;
+  }
+}
+
+/* what we do */
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-backgound);
+  color: var(--text-color);
+  padding: 60px 0px 100px 0px;
+  min-height: 500px;
+}
+
+.what-we-do-text,
+.what-we-do-heading {
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 50px;
+}
+
+.image-box {
+  width: auto;
+  height: auto;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 756px) {
+  .icon-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/* our trips */
+
+.our-trips {
+  padding: 50px 100px 50px 100px;
+  margin: auto;
+}
+
+.our-trips-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: auto;
+  max-width: 630px;
+  width: auto;
+}
+
+.our-trips-img {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.our-trips-text {
+  width: 200px;
+  height: 200px;
+  background-color: #f2f2f2;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+@media (max-width: 756px) {
+  .our-trips {
+    padding: 20px;
+  }
+
+  .our-trips-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-trips-img {
+    width: auto;
+    height: auto;
+  }
+
+  .our-trips-text {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* contact */
+
+.contact-container {
+  background-color: #644b4f;
+  color: var(--text-color);
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.contact-header {
+  flex: 1;
+  width: 100px;
+}
+
+.content-wrapper {
+  flex: 2;
+}
+
+.contact-text {
+  height: auto;
+  margin: auto;
+}
+
+.contact-text.margin-top {
+  margin-top: 20px;
+}
+
+.contact-line {
+  line-height: 30px;
+  padding-top: 10px;
+}
+
+.div-button {
+  margin-top: 20px;
+}
+
+.contact-button {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.contact-button:hover {
+  color: #e9877b;
+  box-shadow: 0 12px 16px 0 rgb(0, 0, 0, 0.5);
+}
+
+@media (max-width: 756px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .contact-header {
+    width: auto;
+  }
+}
+
+/* Reviews */
+
+.reviews {
+  max-width: 70%;
+  padding: 50px 0px 70px 0px;
+  margin: auto;
+}
+
+.reviews-header,
+.reviews-text {
+  text-align: center;
+  margin: auto;
+  display: block;
+  max-width: 50%;
+  padding-bottom: 10px;
+}
+
+.review-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+.review-card {
+  max-width: 300px;
+  text-align: center;
+}
+
+.reviw-card,
+.reviewer-card-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review-card-text {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.reviewer-name {
+  font-weight: bold;
+}
+
+@media (max-width: 756px) {
+  .reviews {
+    max-width: 80%;
+  }
+
+  .review-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .reviews-text {
+    max-width: 80%;
+  }
+}
+
+/* gallery */
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-container {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.gallery-img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  position: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 756px) {
+  .img-container {
+    flex: 1 100%;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: #333333;
+  color: var(--text-color);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-link {
+  color: #efa69d;
+}
+
+.copyright-info {
+  padding-top: 10px;
+}
